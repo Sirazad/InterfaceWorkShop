@@ -9,6 +9,8 @@ public class Main {
         List<Flying> animals = new ArrayList();
         animals.add(new LadyBird("Katica", false));
         animals.add(new LadyBird ("Katika", false));
+        animals.add(new LadyBird ("Karesz", true));
+        animals.add(new Bird ("Bibi", false));
         animals.add(new Bird ("Bélus", true));
         animals.add(new Bird ("Jónás", true));
 
