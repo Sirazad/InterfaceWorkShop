@@ -1,12 +1,21 @@
 package com.codecool.interfaceWS ;
 
-public class Bird {
+public class Bird implements Flying, Feed {
 
-    private String name;
-    private boolean isMale;
+    private final String NAME;
+    private final boolean IS_MALE;
 
-    public static void main(String[] args) {
-
+    public Bird (String name, boolean isMale) {
+        this.NAME = name;
+        this.IS_MALE = isMale;
     }
 
+
+    public void fly() {
+        System.out.println("Chirp, chirp");
+    }
+
+    public void feed() {
+        System.out.println("I love aphid.");
+    }
 }
